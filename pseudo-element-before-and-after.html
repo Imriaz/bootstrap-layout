@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element before and after
+    </title>
+
+    <style>
+        .section-title {
+            display: inline-block;
+        }
+
+        .section-title::after,
+        .section-title::before {
+            content: '';
+            display: block;
+            background-color: crimson;
+            height: 2px;
+            width: 100%;
+        }
+
+
+        blockquote::before {
+            content: open-quote;
+            color: blue;
+            font-size: 1.5em
+        }
+
+        blockquote::after {
+            content: close-quote;
+            color: blue;
+            font-size: 1.5em
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section>
+        <h1 class="section-title">Here some Blockquote</h1>
+
+        <blockquote>Gave me courage to smash goals</blockquote>
+
+        <blockquote>I’ll try is the battle cry of wimps. ~Tony Robbins</blockquote>
+
+        <blockquote>You must be the change you wish to see in the world ~Ghandi</blockquote>
+    </section>
+
+</body>
+
+</html>
